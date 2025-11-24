@@ -91,7 +91,7 @@ const PostJob = () => {
                 <Textarea placeholder="Job Description" {...register("description")} />
                 {errors.description && <p className="text-red-500">{errors.description.message}</p>}
 
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-col sm:flex-row gap-2 mb-3">
                     <Controller
                         name="location"
                         control={control}
